@@ -1,39 +1,39 @@
 <p align="center">
   <h1 align="center">AngularFire</h1>
-  <p align="center">The official library for Firebase and Angular</p>
+  <p align="center">La biblioteca oficial de Firebase y Angular.</p>
 </p>
 
 [![Build Status](https://travis-ci.org/angular/angularfire2.svg?branch=master)](https://travis-ci.org/angular/angularfire2) [![Join the chat at https://gitter.im/angular/angularfire2](https://badges.gitter.im/angular/angularfire2.svg)](https://gitter.im/angular/angularfire2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## What is AngularFire?
+## ¿Qué es AngularFire?
 
-- **Observable based** - Use the power of RxJS, Angular, and Firebase.
-- **Realtime bindings** - Synchronize data in realtime.
-- **Authentication** - Log users in with a variety of providers and monitor authentication state.
-- **Offline Data** - Store data offline automatically with AngularFirestore.
-- **Server-side Render** - Generate static HTML to boost perceived performance or create static sites.
-- **ngrx friendly** - Integrate with ngrx using AngularFire's action based APIs.
-- **Manage binary data** - Upload, download, and delete binary files like images, videos, and other blobs.
-- **Call server code** - Directly call serverless Cloud Functions with user context automatically passed.
-- **Push notifications** - Register and listen for push notifications
-- **Modular** - Include only what's needed. No AngularFire package is above 3kb with most under 2kb (gzipped).
+- **Basado en observables** -  Use el poder de RxJS, Angular y Firebase..
+- **Enlaces en tiempo real** - Sincronizar datos en tiempo real.
+- **Autenticación** - Inicie sesión con una variedad de proveedores y monitoree el estado de autenticación.
+- **Datos sin conexión** - Almacene los datos sin conexión automáticamente con AngularFirestore.
+- **Procesamiento del lado del servidor** - Genere HTML estático para mejorar el rendimiento percibido o crear sitios estáticos.
+- **Amigable con ngrx** - Se integra con ngrx mediante las API basadas en acción de AngularFire.
+- **Administre datos binarios** - cargue, descargue y elimine archivos binarios como imágenes, videos y otros blobs.
+- **Código del servidor de llamadas** - Llame directamente a las funciones de la nube sin servidor con el contexto del usuario automáticamente pasado.
+- **Notificaciones push** - Regístrese y escuche las notificaciones push
+- **Modular** - incluya solo lo que se necesita. Ningún paquete de AngularFire está por encima de 3kb con la mayoría por debajo de 2kb (gzipped).
 
-#### Quick links
-[Contributing](CONTRIBUTING.md)
+#### Enlaces rápidos
+[Contribuyendo](CONTRIBUTING.md)
 
-[Stackblitz Template](https://stackblitz.com/edit/angular-1iment) - Remember to set your Firebase configuration in `app/app.module.ts`.
+[Plantilla Stackblitz](https://stackblitz.com/edit/angular-1iment) - Recuerde establecer su configuración de Firebase en `app/app.module.ts`.
 
-[Upgrading to v5.0? Check out our guide.](docs/version-5-upgrade.md)
+[¿Actualizando a v5.0? Echa un vistazo a nuestra guía.](docs/version-5-upgrade.md)
 
-**Having troubles?** Get help on the [Firebase Mailing List](https://groups.google.com/forum/#!forum/firebase-talk) (officially supported), the [Firebase Community Slack](https://firebase.community/) (look for the `#angularfire2` room), [Gitter](https://gitter.im/angular/angularfire2), or [Stack Overflow](https://stackoverflow.com/questions/tagged/angularfire2).
+**¿Tienes problemas?** Obtenga ayuda sobre la [Lista de correo de Firebase](https://groups.google.com/forum/#!forum/firebase-talk) (oficialmente compatible), la [Comunidad de Firebase Slack](https://firebase.community/) (busque la sala `#angularfire2`), [Gitter](https://gitter.im/angular/angularfire2), or [Stack Overflow](https://stackoverflow.com/questions/tagged/angularfire2).
 
-## Install
+## Instalar
 
 ```bash
 npm install firebase @angular/fire --save
 ```
 
-## Example use:
+## Ejemplo de uso:
 
 ```ts
 import { Component } from '@angular/core';
@@ -58,62 +58,62 @@ export class MyApp {
 }
 ```
 
-## Developer Guide
+## Guía del desarrollador
 
-### Getting started
+### Empezando
 
-- [Installation & Setup](docs/install-and-setup.md)
+- [Instalación y configuración](docs/install-and-setup.md)
 
-### Interacting with your database(s)
+### Interactuando con su(s) base(s) de datos.
 
-Firebase offers two cloud-based, client-accessible database solutions that support realtime data syncing. [Learn about the differences between them in the Firebase Documentation](https://firebase.google.com/docs/firestore/rtdb-vs-firestore).
+Firebase ofrece dos soluciones de base de datos accesibles desde el cliente y basadas en la nube que admiten la sincronización de datos en tiempo real. [Conozca las diferencias entre ellos en la Documentación de Firebase .](https://firebase.google.com/docs/firestore/rtdb-vs-firestore).
 
 #### Cloud Firestore
 
-> `AngularFirestore` allows you to work with Cloud Firestore, the new flagship database for mobile app development. It improves on the successes of Realtime Database with a new, more intuitive data model. Cloud Firestore also features richer, faster queries and scales better than Realtime Database.
+> `AngularFirestore` le permite trabajar con Cloud Firestore, la nueva base de datos principal para el desarrollo de aplicaciones móviles. Mejora los éxitos de Realtime Database con un nuevo modelo de datos más intuitivo. Cloud Firestore también cuenta con consultas más ricas y rápidas y escalas mejor que Realtime Database.
 
-- [Documents](docs/firestore/documents.md)
-- [Collections](docs/firestore/collections.md)
-- [Querying Collections](docs/firestore/querying-collections.md)
-- [Offline data](docs/firestore/offline-data.md)
+- [Documentos](docs/firestore/documents.md)
+- [Colecciones](docs/firestore/collections.md)
+- [Consultando Colecciones](docs/firestore/querying-collections.md)
+- [Datos fuera de línea](docs/firestore/offline-data.md)
 
-#### Realtime Database
+#### Base de datos en tiempo real
 
-> `AngularFireDatabase` allows you to work with the Realtime Database, Firebase's original database. It's an efficient, low-latency solution for mobile apps that require synced states across clients in realtime.
+> `AngularFireDatabase` le permite trabajar con la base de datos en tiempo real, la base de datos original de Firebase. Es una solución eficiente de baja latencia para aplicaciones móviles que requieren estados sincronizados en todos los clientes en tiempo real.
 
-- [Objects](docs/rtdb/objects.md)
-- [Lists](docs/rtdb/lists.md)
-- [Querying lists](docs/rtdb/querying-lists.md)
+- [Objetos](docs/rtdb/objects.md)
+- [Listas](docs/rtdb/lists.md)
+- [Consultando listas](docs/rtdb/querying-lists.md)
 
-### Authenticate users
+### Autenticar usuarios
 
-- [Getting started with Firebase Authentication](docs/auth/getting-started.md)
+- [Comenzando con la autenticación Firebase](docs/auth/getting-started.md)
 
-### Upload files
-- [Getting started with Cloud Storage](docs/storage/storage.md)
+### Subir archivos
+- [Comenzando con el almacenamiento en la nube](docs/storage/storage.md)
 
-### Send push notifications
-- [Getting started with Firebase Messaging](docs/messaging/messaging.md)
+### Enviar notificaciones push
+- [Comenzando con la mensajería de Firebase](docs/messaging/messaging.md)
 
-### Directly call Cloud Functions
-- [Getting started with Callable Functions](docs/functions/functions.md)
+### Llamar directamente a las funciones de la nube
+- [Primeros pasos con funciones callables](docs/functions/functions.md)
 
-### Deploying your application
+### Desplegando su aplicación
 
-> Firebase Hosting is production-grade web content hosting for developers. With Hosting, you can quickly and easily deploy web apps and static content to a global content delivery network (CDN) with a single command.
+> Firebase Hosting es un alojamiento de contenido web de nivel de producción para desarrolladores. Con Hosting, puede implementar rápida y fácilmente aplicaciones web y contenido estático en una red de entrega de contenido global (CDN) con un solo comando.
 
-- [Deploy your Angular application on Firebase Hosting](docs/deploying-angularfire-to-firebase.md)
+- [Despliegue su aplicación Angular en Firebase Hosting](docs/deploying-angularfire-to-firebase.md)
 
-#### Server-side rendering
+#### Representación del lado del servidor
 
-> Angular Universal is a technology that allows you to run your Angular application on a server. This allows you to generate your HTML in a process called server-side rendering (SSR). Angularfire is compatible with server-side rendering; allowing you to take advantage of the Search Engine Optimization, link previews, the performance gains granted by the technology, and more. [Learn more about Angular Universal](https://angular.io/guide/universal).
+>Angular Universal es una tecnología que le permite ejecutar su aplicación Angular en un servidor. Esto le permite generar su HTML en un proceso llamado representación del lado del servidor (SSR). Angularfire es compatible con la representación del lado del servidor; lo que le permite aprovechar las ventajas de la optimización del motor de búsqueda, las vistas previas de los enlaces, las mejoras de rendimiento otorgadas por la tecnología y mucho más. [Aprende más sobre Angular Universal .](https://angular.io/guide/universal).
 
-- [Getting started with Angular Universal](docs/universal/getting-started.md)
-- [Deploying your Universal application on Cloud Functions for Firebase](docs/universal/cloud-functions.md)
-- [Prerendering your Universal application](docs/universal/prerendering.md)
+- [Empezando con Angular Universal](docs/universal/getting-started.md)
+- [Despliegue de su aplicación Universal en Cloud Functions para Firebase](docs/universal/cloud-functions.md)
+- [Pretender su aplicación universal](docs/universal/prerendering.md)
 
 ### Ionic
 
-- [Installation and Setup with Ionic CLI](docs/ionic/cli.md)
-- [Using AngularFire with Ionic 2](docs/ionic/v2.md)
-- [Using AngularFire with Ionic 3](docs/ionic/v3.md)
+- [Instalación y configuración con Ionic CLI](docs/ionic/cli.md)
+- [Usando AngularFire con Ionic 2](docs/ionic/v2.md)
+- [Usando AngularFire con Ionic 3](docs/ionic/v3.md)
